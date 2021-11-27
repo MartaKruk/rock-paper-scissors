@@ -1,6 +1,4 @@
-package com.kodilla;
-
-import static com.kodilla.InputOutputController.getPlayerMove;
+package com;
 
 public class HumanPlayer extends Player {
 
@@ -10,6 +8,6 @@ public class HumanPlayer extends Player {
 
     @Override
     public int getMove(GameRules rules) {
-        return getPlayerMove(rules);
+        return InputOutputController.getPlayerMove(rules);
     }
 }

@@ -1,4 +1,4 @@
-package com.kodilla;
+package com;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.kodilla;
+package com;
 
 public class RPSRules implements GameRules {
 

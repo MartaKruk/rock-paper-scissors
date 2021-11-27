@@ -1,4 +1,4 @@
-package com.kodilla;
+package com;
 
 public abstract class Player {
 
