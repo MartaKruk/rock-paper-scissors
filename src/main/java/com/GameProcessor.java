@@ -20,25 +20,23 @@ public class GameProcessor {
             int player1Move = player1.getMove(rules);
             int player2Move = player2.getMove(rules);
             int whoWon = rules.whoWon(player1Move, player2Move);
+            InputOutputController.printMoves(player1.getName(), player1Move, player2.getName(), player2Move);
             if (whoWon == 1) {
                 player1.addPoint();
-                System.out.println("Moves made: " + player1.getName() + " used " + player1Move + ", " + player2.getName() + " used " + player2Move + ".\n" +
-                        player1.getName() + " won this round.\n");
+                InputOutputController.printRoundWinner(player1.getName());
             } else if (whoWon == 2) {
                 player2.addPoint();
-                System.out.println("Moves made: " + player1.getName() + " used " + player1Move + ", " + player2.getName() + " used " + player2Move + ".\n" +
-                        player2.getName() + " won this round.\n");
+                InputOutputController.printRoundWinner(player2.getName());
             } else {
-                System.out.println("Moves made: " + player1.getName() + " used " + player1Move + ", " + player2.getName() + " used " + player2Move + ".\n" +
-                        "That's a draw!\n");
+                InputOutputController.printDraw();
             }
-            System.out.println("Current score: " + player1.getName() + ": " + player1.getPoints() + ", " + player2.getName() + ": " + player2.getPoints() + ".");
+            InputOutputController.printCurrentScore(player1.getName(), player1.getPoints(), player2.getName(), player2.getPoints());
         }
         if (player1.getPoints()> player2.getPoints()) {
-            System.out.println(player1.getName() + " won!\n");
+            InputOutputController.printEndWinner(player1.getName());
         } else {
-            System.out.println(player2.getName() + " won!\n");
+            InputOutputController.printEndWinner(player2.getName());
         }
-        System.out.println("End score: " + player1.getName() + ": " + player1.getPoints() + ", " + player2.getName() + ": " + player2.getPoints() + ".");
+        InputOutputController.printEndScore(player1.getName(), player1.getPoints(), player2.getName(), player2.getPoints());
     }
 }

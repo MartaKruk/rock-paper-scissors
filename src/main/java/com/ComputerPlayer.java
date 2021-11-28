@@ -2,9 +2,9 @@ package com;
 
 import java.util.Random;
 
-public class ComputerPlayer extends Player{
+public class ComputerPlayer extends Player {
 
-    private Random random = new Random();
+    private static final Random random = new Random();
 
     public ComputerPlayer() {
         super("Computer");
@@ -12,7 +12,7 @@ public class ComputerPlayer extends Player{
 
     @Override
     public int getMove(GameRules rules) {
-        if (rules.rulesName().equals("RPS")) {
+        if (rules instanceof RPSRules) {
             return random.nextInt(3) + 1;
         } else {
             return random.nextInt(5) + 1;
