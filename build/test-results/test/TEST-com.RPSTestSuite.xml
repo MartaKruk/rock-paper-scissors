@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.RPSTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-11-27T21:22:34" hostname="LAPTOP-LSSOCV86" time="0.922">
-  <properties/>
-  <testcase name="testRPSRules()" classname="com.RPSTestSuite" time="0.447"/>
-  <testcase name="testRPSLSRules()" classname="com.RPSTestSuite" time="0.002"/>
-  <testcase name="testIsNaturalNumber()" classname="com.RPSTestSuite" time="0.47"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
