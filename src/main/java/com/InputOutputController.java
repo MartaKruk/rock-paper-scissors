@@ -116,7 +116,7 @@ public class InputOutputController {
     }
 
     public static void printMoves(String player1Name, int player1Move, String player2Name, int player2Move) {
-        System.out.println("Moves made: \n" + player1Name + " used " + player1Move + ", " + player2Name + " used " + player2Move + ".");
+        System.out.println("Moves made: \n" + player1Name + " used " + nameMove(player1Move) + ", " + player2Name + " used " + nameMove(player2Move) + ".");
     }
 
     public static void printRoundWinner(String winner) {
@@ -141,5 +141,10 @@ public class InputOutputController {
 
     static boolean isNaturalNumber(CharSequence input) {
         return input != null && PATTERN.matcher(input).matches();
+    }
+
+    private static String nameMove(int move) {
+        String[] moves = { "stone", "paper", "scissors", "lizard", "Spock" };
+        return moves[move-1];
     }
 }

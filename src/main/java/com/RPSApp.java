@@ -4,7 +4,6 @@ public class RPSApp {
 
     public static void main(String[] args) {
         boolean end;
-
         do {
             Player player1 = new HumanPlayer(InputOutputController.getPlayerName());
             Player player2 = new ComputerPlayer();
