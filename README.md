@@ -9,6 +9,7 @@ This is a rock-paper-scissors-lizard-spock game created using Java 11. Player is
 
 ## Demo
 
+https://user-images.githubusercontent.com/88311091/154751541-2e0094f0-0204-48e6-91cc-c0de4cdbe09e.mp4
 
 
 ## How to start the game
