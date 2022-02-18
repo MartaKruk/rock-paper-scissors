@@ -1,0 +1,1 @@
+java -jar rock-paper-scissors.jar
